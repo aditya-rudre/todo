@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    background: linear-gradient(to right, #fcefff, #e5fee5, #fffee0); /* Example gradient colors */
+    /* Optionally, set a fallback solid color */
+    background-color: white; /* Fallback color in case gradients are not supported */
+    /* Ensure the background covers the entire viewport */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+input::placeholder {
+    color: black; /* Set the placeholder text color to black */
+}
+textarea::placeholder {
+    color: black; /* Set the placeholder text color to black */
+}
+
+
+@keyframes Cardslide {
+    from{
+        transform: translate();
+    }
+    to{
+        transform: translate();
+    }
+}
+li{
+    animation-name: Cardslide;
+    animation-duration: 0ms;
+    animation-timing-function: ease-in;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwwards;
+    /* transform: translate(-150px); */
+}
